@@ -1,0 +1,468 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 24px;
+	text-transform: uppercase;
+
+	background-color: #070707;
+}
+
+:hover, :active, :focus {
+	outline: none;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.page-header {
+	background-color: #000;
+}
+
+.page-header__wrap {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.main-nav {
+	float: left;
+	margin: 0;
+	padding: 0;
+
+	font-size: 0;
+
+	list-style: none;
+}
+
+.main-nav__item {
+	display: inline-block;
+}
+
+.main-nav__link {
+	display: block;
+	padding: 25px;
+
+	font-size: 16px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.main-nav__link:hover {
+	background-color: #242424;
+}
+
+.user-block {
+	float: right;
+}
+
+.login {
+	position: relative;
+
+	display: block;
+	padding: 25px;
+	padding-left: 50px;
+
+	font-size: 16px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.login::before {
+	content: "";
+
+	position: absolute;
+	top: 50%;
+	left: 17px;
+	transform: translateY(-50%);
+
+	display: block;
+	width: 18px;
+	height: 16px;
+
+	background-image: url('../img/login.png');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.login:hover {
+	background-color: #242424;
+}
+
+.login:hover::before {
+	background-image: url('../img/login-hover.png');
+}
+
+.content {
+	background-image: url('../img/bg.jpg');
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	background-size: cover;
+}
+
+.content__wrap {
+	width: 940px;
+	margin: 0 auto;
+	padding-top: 55px;
+	padding-bottom: 65px;
+}
+
+.logo {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 70px;
+}
+
+.features {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.features__item {
+	position: relative;
+
+	float: left;
+	width: 280px;
+	margin-right: 40px;
+
+	text-align: center;
+}
+
+.features__item:last-child {
+	margin-right: 0;
+}
+
+.features__item::before {
+	content: "";
+
+	position: absolute;
+	top: 50px;
+	left: 50%;
+
+	display: block;
+	width: 20px;
+	height: 20px;
+	transform: translateX(-50%) rotate(-45deg);
+
+	background-color: #fff;
+}
+
+.features__title {
+	display: block;
+	margin-bottom: 70px;
+
+	font-size: 30px;
+	color: #fff;
+}
+
+.features__descr {
+	margin: 0;
+	margin-bottom: 70px;
+
+	color: #fff;
+}
+
+.index-content {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.index-content__top,
+.index-content__bottom {
+	padding: 50px 80px;
+
+	background-color: #fff;
+	background-image: url(../img/noise.jpg);
+}
+
+.index-content__top {
+	position: relative;
+
+	box-sizing: border-box;
+	height: 420px;
+	margin-bottom: 35px;
+}
+
+.index-content__bottom {
+	position: relative;
+}
+
+.index-content__top::before,
+.index-content__bottom::before {
+	content: "";
+
+	position: absolute;
+	top: 50%;
+	left: 466px;
+	transform: translateY(-50%);
+
+	display: block;
+	width: 8px;
+	height: 278px;
+
+	background-image: url('../img/delimiter.png');
+	background-repeat: no-repeat;
+}
+
+.index-content__title {
+	margin: 0;
+	margin-bottom: 30px;
+
+	font-size: 30px;
+}
+
+.news, .contacts {
+	float: left;
+	width: 350px;
+	margin-right: 130px;
+}
+
+.news__list {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.news__item:first-child {
+	margin-bottom: 25px;
+}
+
+.news__item-cont {
+	margin: 0;
+}
+
+.news__item-time {
+	text-transform: none;
+}
+
+.btn {
+	box-sizing: border-box;
+	display: block;
+	width: 140px;
+	height: 44px;
+
+	font: inherit;
+	line-height: 44px;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+
+	background-color: #000;
+	border: none;
+
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: #663d15;
+}
+
+.to-all-news {
+	position: absolute;
+	left: 80px;
+	bottom: 50px;
+}
+
+.gallery__list {
+	margin: 0;
+	padding: 0;
+}
+
+.gallery__item {
+	display: block;
+	width: 286px;
+	height: 164px;
+
+	border: 7px solid #fff;
+}
+
+.buttons {
+	position: absolute;
+	right: 80px;
+	bottom: 50px;
+
+	width: 300px;
+}
+
+.btn--prev {
+	float: left;
+	margin-right: 20px;
+}
+
+.contacts__item {
+	margin: 0;
+	margin-bottom: 25px;
+}
+
+.inline-fix {
+	font-size: 0;
+}
+
+.to-map, .to-feedback {
+	display: inline-block;
+
+	font-size: 14px;
+}
+
+.to-map {
+	margin-right: 20px;
+}
+
+.appointment__descr {
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+.appointment__input {
+	box-sizing: border-box;
+	float: left;
+	display: block;
+	width: 140px;
+	height: 44px;
+	margin-bottom: 20px;
+	padding: 0 15px;
+
+	font: inherit;
+	text-transform: uppercase;
+
+	border: 2px solid #000;
+}
+
+.appointment__input::placeholder {
+	color: #000;
+}
+
+.appointment__input:nth-child(odd) {
+	margin-right: 20px;
+}
+
+.send-to {
+	width: 300px;
+}
+
+.page-footer {
+	padding-top: 65px;
+	padding-bottom: 45px;
+
+	background-image: url('../img/noise-f.jpg');
+}
+
+.page-footer__wrap {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.adress {
+	float: left;
+	width: 320px;
+	margin-right: 80px;
+
+	color: #fff;
+}
+
+.adress__link {
+	display: block;
+
+	color: #fff;
+}
+
+.social {
+	float: left;
+
+	text-align: center;
+}
+
+.social__descr {
+	margin: 0;
+	margin-bottom: 15px;
+
+	color: #fff;
+}
+
+.social__list {
+	margin: 0;
+	padding: 0;
+
+	font-size: 0;
+
+	list-style: none;
+}
+
+.social__item {
+	display: inline-block;
+}
+
+.social__link {
+	display: block;
+	width: 44px;
+	height: 44px;
+	margin-right: 6px;
+
+	background-color: #000;
+}
+
+.social__item:last-child .social__link {
+	margin-right: 0;
+}
+
+.vk::before {
+	content: "";
+
+	display: block;
+	width: 44px;
+	height: 44px;
+
+	background-image: url('../img/vk.png');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.fb::before {
+	content: "";
+
+	display: block;
+	width: 44px;
+	height: 44px;
+
+	background-image: url('../img/fb.png');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.in::before {
+	content: "";
+
+	display: block;
+	width: 44px;
+	height: 44px;
+
+	background-image: url('../img/in.png');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.social__link:hover {
+	background-color: #663d15;
+}
+
+.copyright {
+	float: right;
+
+	text-align: center;
+}
+
+.copyright__descr {
+	margin: 0;
+	margin-bottom: 15px;
+
+	color: #fff;
+}
